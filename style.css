@@ -1,0 +1,198 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable in CSS */
+:root{
+    --navbar-height:26px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color:rgb(9, 10, 10);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: rgb(5 44 66);
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: rgb(53, 79, 3);
+}
+
+/* logo and image */
+#logo{
+    margin: 13px 23px;
+}
+
+#logo img{
+    margin: -7px 23px;
+    height: 58px;
+}
+
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 345px;
+    padding: 20px 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background:url('../img/pizza.jpg') no-repeat center center/cover;
+    height: 531px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* Utility classes */
+.h-primary{
+    color: black;
+    text-align: center;
+    font-size: 2.9rem;
+    font-family: "Sofia", sans-serif;
+}
+.h-secondary{
+    color: rgb(109, 47, 3);
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Sofia", sans-serif;
+}
+#home p{
+    color: rgb(82, 3, 3);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn{
+    color: wheat;
+    background-color: rgb(9, 10, 10);
+    padding: 4px 9px;
+    margin: 12px;
+    border-radius: 5px;
+    border: 2px solid rgb(225, 79, 96);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+/* Services section */
+#service-container{
+    padding: 65px 0px;
+}
+#services{
+    margin: 31px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 22px 6px;
+    border-radius: 5px;
+    padding: 24px;
+    background-color: rgb(237, 172, 129);
+}
+
+#services .box img{
+    height: 100px;
+    display:block;
+    margin: auto;
+    padding: 5px;
+}
+#services .box p{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#client-section{
+    position: relative;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 5px;
+}
+#client img{
+    height: 150px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('../img/raspberries-7213407_640.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../img/laptop-2298286_640.png) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 23px;
+    border-radius: 4px;
+}
+#contact-box textarea{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+    background-color: rgb(6, 81, 161);
+    color: aliceblue;
+    padding: 6px 12px;
+}
